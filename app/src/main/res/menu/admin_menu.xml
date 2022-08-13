@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/createTask"
+        android:title="Create Task" />
+    <item
+        android:id="@+id/adminUserView"
+        android:title="Admin UserView" />
+    <item
+        android:id="@+id/createUser"
+        android:title="Create User" />
+    <item
+        android:id="@+id/admin_logout"
+        android:title="Logout" />
+</menu>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel.EditTaskActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_60sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+
+        <LinearLayout
+            android:id="@+id/taskAssignLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_15sdp">
+
+            <!--task title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/taskTitleAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/task_bg"
+                android:hint="Enter task Title"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <!--            status-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/statusGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/TodoAdmin"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:checkable="false"
+                        android:clickable="false"
+                        android:padding="@dimen/_4sdp"
+                        android:text="Todo"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_12ssp"
+                        app:chipCornerRadius="@dimen/_5sdp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/inProgressAdmin"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:checkable="false"
+                        android:clickable="false"
+                        android:padding="@dimen/_4sdp"
+                        android:text="In Progress"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_12ssp"
+                        app:chipCornerRadius="@dimen/_5sdp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/DoneAdmin"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:checkable="false"
+                        android:clickable="false"
+                        android:padding="@dimen/_4sdp"
+                        android:text="Done"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_12ssp"
+                        app:chipCornerRadius="@dimen/_5sdp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+
+            <!--            priority-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Priority"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/priorityGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/highAdmin"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:checkable="false"
+                        android:clickable="false"
+                        android:padding="@dimen/_4sdp"
+                        android:text="High"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_12ssp"
+                        app:chipCornerRadius="@dimen/_5sdp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/mediumAdmin"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:checkable="false"
+                        android:clickable="false"
+                        android:padding="@dimen/_4sdp"
+                        android:text="Medium"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_12ssp"
+                        app:chipCornerRadius="@dimen/_5sdp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/lowAdmin"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:checkable="false"
+                        android:clickable="false"
+                        android:padding="@dimen/_4sdp"
+                        android:text="low"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_12ssp"
+                        app:chipCornerRadius="@dimen/_5sdp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+
+
+            <!--pick date-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:id="@+id/centerinparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/starttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starts"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/starttext"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/dates_bg"
+                    android:hint="@string/start_date_msg"
+                    android:padding="@dimen/_7sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/endtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/centerinparent"
+                    android:text="Ends"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dueDate"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/endtext"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/centerinparent"
+                    android:background="@drawable/dates_bg"
+                    android:hint="@string/due_date_msg"
+                    android:padding="@dimen/_7sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+
+            <!--Participants-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Participants"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/assignTaskToUserBtnAdmin"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/participants_add"
+                    android:src="@drawable/ic_baseline_add_24" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/participantsAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <!--descripation-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/taskDescAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/task_bg"
+                android:gravity="top"
+                android:hint="This is where you write description....."
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/updateTaskAdmin"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="Update Task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

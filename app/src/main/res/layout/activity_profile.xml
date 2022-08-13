@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_bg"
+    tools:context=".Activites.Profile">
+
+    <RelativeLayout
+        android:id="@+id/profileBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:background="@drawable/profilebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_back_profile" />
+
+        <!--       <ImageButton-->
+        <!--           android:id="@+id/userSignOut"-->
+        <!--           android:background="@drawable/ic_sign_out_profile"-->
+        <!--           android:layout_width="@dimen/_25sdp"-->
+        <!--           android:layout_height="@dimen/_25sdp"-->
+        <!--           android:layout_alignParentRight="true"-->
+        <!--           android:layout_marginRight="@dimen/_10sdp"-->
+        <!--           android:layout_marginTop="@dimen/_10sdp"-->
+        <!--           />-->
+
+
+        <TextView
+            android:id="@+id/userProfileCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="UI/UX Designer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profileImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:src="@drawable/profile_avatar"
+            app:civ_border_width="@dimen/_1sdp" />
+
+
+        <ImageView
+            android:id="@+id/editUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileImage"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_toRightOf="@+id/profileName"
+            android:src="@drawable/ic_edit">
+
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@null"
+            android:fontFamily="@font/inter_medium"
+            android:inputType="none"
+            android:text="Avinash Powar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileName"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/inter_medium"
+            android:text="avipowor@phodara.com"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/todoCard"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:contentPadding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileBg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_todo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="To-do"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/todoCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="23"
+            android:textColor="@color/desc_text"
+            android:textSize="@dimen/_12ssp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/inProgressCard"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:contentPadding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todoCard">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_inprogress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="In Progress"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/inProgressCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="23"
+            android:textColor="@color/desc_text"
+            android:textSize="@dimen/_12ssp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/doneCard"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:contentPadding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inProgressCard">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_done" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Done"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/doneCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="23"
+            android:textColor="@color/desc_text"
+            android:textSize="@dimen/_12ssp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/updateProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:background="@drawable/ic_assignbtn"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/updateProfileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/inter_medium"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Update Profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

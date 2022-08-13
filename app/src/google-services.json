@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "426645351295",
+    "project_id": "taskmanager-4dcbf",
+    "storage_bucket": "taskmanager-4dcbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426645351295:android:06e38ce795e50b129b884a",
+        "android_client_info": {
+          "package_name": "com.taskmanager.horkrux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426645351295-1v6jabq3fjd33gqjuc06iugl3oaoju9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3z9Aag0FGfdf2xHdTVIAia7T3tQUdSdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426645351295-1v6jabq3fjd33gqjuc06iugl3oaoju9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

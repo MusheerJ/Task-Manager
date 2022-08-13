@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#f7f8fa"
+    tools:context=".AdminPanel.AdminPanelActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/assignTaskBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:cardBackgroundColor="@color/bg_color"
+        app:cardElevation="0.1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <TextView
+
+            android:id="@+id/dashBoardHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Dashboard"
+            android:textColor="@color/desc_text"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp" />
+
+        <ImageButton
+            android:id="@+id/adminMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/bg_color"
+            android:src="@drawable/ic_dot">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/sendNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:backgroundTint="@color/bg_color"
+            android:src="@drawable/ic_send" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/centerinparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/teamAndroid"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_165sdp"
+        android:layout_above="@+id/centerinparent"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="11dp"
+        android:layout_toLeftOf="@+id/centerinparent"
+        android:backgroundTint="@color/low_green"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_android" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Android"
+            android:textAlignment="center"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/_14ssp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/teamWeb"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_165sdp"
+        android:layout_above="@+id/centerinparent"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_toRightOf="@+id/centerinparent"
+        android:backgroundTint="@color/low_yellow"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_web" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Web Development"
+            android:textAlignment="center"
+            android:textColor="@color/dark_yellow"
+            android:textSize="@dimen/_14ssp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/teamUiUx"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_165sdp"
+        android:layout_below="@+id/centerinparent"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_toLeftOf="@+id/centerinparent"
+        android:backgroundTint="@color/low_red"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_ui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="UI/UX Team"
+            android:textAlignment="center"
+            android:textColor="@color/dark_red"
+            android:textSize="@dimen/_14ssp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/teamMBA"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_165sdp"
+        android:layout_below="@+id/centerinparent"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_toRightOf="@+id/centerinparent"
+        android:backgroundTint="@color/low_pink"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_mba" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="MBA TEAM"
+            android:textAlignment="center"
+            android:textColor="@color/dark_pink"
+            android:textSize="@dimen/_14ssp" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

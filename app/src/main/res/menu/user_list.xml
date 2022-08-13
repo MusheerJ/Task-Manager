@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_1"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="user 1" />
+    <item
+        android:id="@+id/option_2"
+        android:title="user 2" />
+
+    <item
+        android:id="@+id/option_3"
+        android:title="user 3"
+        />
+</menu>

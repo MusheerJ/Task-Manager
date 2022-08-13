@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_145sdp"
+    android:background="@color/bg_color"
+    android:padding="@dimen/_10sdp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/centerinparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ImageButton
+        android:id="@+id/cancel_nav_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="@color/bg_color"
+        android:src="@drawable/ic_cancel" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/loggedInUserProfile"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@+id/cancel_nav_button"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:contentDescription="@string/nav_header_desc"
+        app:civ_border_width="@dimen/_1sdp"
+        app:srcCompat="@drawable/place_holder" />
+
+    <TextView
+        android:id="@+id/loggedInUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_header_title"
+        android:fontFamily="@font/inter_medium"
+        android:layout_toRightOf="@+id/loggedInUserProfile"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_below="@+id/cancel_nav_button"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        />
+
+    <TextView
+        android:id="@+id/loggedInUserMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loggedInUserName"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_toRightOf="@+id/loggedInUserProfile"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/nav_header_subtitle"
+        android:textSize="@dimen/_10ssp" />
+</RelativeLayout>
